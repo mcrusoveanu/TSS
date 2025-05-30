@@ -93,6 +93,13 @@ In momentul in care am folosit gemini pentru cerinta mea rezultatul a fost gener
 
 Codul generat de AI este in documentul login2TesteGenerateDeAI.php
 
+Bibliografie :
+Chatgbt 
+Gemini
+https://www.youtube.com/watch?v=a5ZKCFINUkU&t=153s
+https://www.youtube.com/watch?v=c0cmRy3lhDQ
+https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf
+
 
 
  
