@@ -3,6 +3,11 @@ Proiect testare unitara in PHP
 
 ![image](https://github.com/user-attachments/assets/2258f068-a37c-4e2a-a5b3-d0438b380b90)
 Testarea unitară reprezintă o componentă fundamentală a asigurării calității software-ului, având rolul de a valida individual, în izolare, cele mai mici unități de cod sursă. În contextul aplicațiilor web, procesele de login (autentificare) și înregistrare (creare cont) ale utilizatorilor sunt critice și necesită o testare riguroasă pentru a garanta securitatea si buna functionare .
+Scopul este de a izola și valida fiecare parte a codului independent.
+Întregul fișier AutentificareUtilizatorTest.php este un exemplu de testare unitară.
+Fiecare metodă de test (test_Logare_Utilizator_Fail_Fara_numeUtilizator, test_Logare_Utilizator_Fail_faraParola, etc.) testează o anumită unitate de cod (în acest caz, metoda logareUtilizator și implicit metodele private InputValid și sirValid ale clasei AutentificareUtilizator).
+Metoda setUp() este folosită pentru a inițializa un obiect AutentificareUtilizator cu o conexiune mysqli simulată (createMock('mysqli')) pentru majoritatea testelor, ceea ce ajută la izolarea logicii de autentificare de o bază de date reală pentru anumite scenarii. Chiar și atunci când se folosește o conexiune reală la baza de date (new mysqli(...)), scopul este de a testa comportamentul unității logareUtilizator în prezența unei baze de date, nu de a testa baza de date în sine.
+
 
 Pentru a putea implementa testare unitara pe procesele de logare si de creare cont a trebuit sa instalez PHPUnit cu ajutorul composer 
 
@@ -18,6 +23,7 @@ b) daca un utilizator introduce doar numele de utilizator sau doar parola rezult
 
 "Eroare! Nu ati introdus date corecte!"
 
+
 Pentru a rula testele se foloseste 
 cd C:\xampp3\htdocs\projectTest
 vendor\bin\phpunit tests/ AutentificareUtiliatorTest.php
@@ -26,6 +32,7 @@ vendor\bin\phpunit tests/ AutentificareUtiliatorTest.php
 Diagrama Flux Logare
 ![image](https://github.com/user-attachments/assets/c66efadc-2fa1-471b-92da-a383f2a965b5)
 ![image](https://github.com/user-attachments/assets/f773fdbf-ffea-4ffb-8cef-0fd1ad89a953)
+
 Raport despre folosirea unui tool de AI care ajută în timpul testării software (de
 exemplu, GitHub Copilot, chatGPT, Microsoft Copilot). Comparați suita proprie de
 teste cu cele autogenerate și evidențiați diferențele. Includeți prompt, răspuns, capturi
