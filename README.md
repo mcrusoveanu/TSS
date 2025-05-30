@@ -16,6 +16,9 @@ b) daca un utilizator introduce doar numele de utilizator sau doar parola rezult
 ![image](https://github.com/user-attachments/assets/69d5c682-444c-4bf8-b5f3-a52c735b6bfe)
 ![image](https://github.com/user-attachments/assets/9fc2dbff-648e-4a74-a013-1debc7cd9b83)
 
-
 "Eroare! Nu ati introdus date corecte!"
+
+Pentru a rula testele se foloseste 
+cd C:\xampp3\htdocs\projectTest
+vendor\bin\phpunit tests/ AuthenticatorTest.php
 
