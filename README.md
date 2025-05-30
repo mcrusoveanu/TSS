@@ -10,7 +10,7 @@ Scopul este de a izola și valida fiecare parte a codului independent.
 
 Fiecare metodă de test (test_Logare_Utilizator_Fail_Fara_numeUtilizator, test_Logare_Utilizator_Fail_faraParola, etc.) testează o anumită unitate de cod (în acest caz, metoda logareUtilizator și implicit metodele private InputValid și sirValid ale clasei AutentificareUtilizator).
 
-Metoda setUp() este folosită pentru a inițializa un obiect AutentificareUtilizator cu o conexiune mysqli simulată (createMock('mysqli')) pentru majoritatea testelor, ceea ce ajută la izolarea logicii de autentificare de o bază de date reală pentru anumite scenarii. Chiar și atunci când se folosește o conexiune reală la baza de date (new mysqli(...)), scopul este de a testa comportamentul unității logareUtilizator în prezența unei baze de date, nu de a testa baza de date în sine.
+Metoda setUp() este folosită pentru a inițializa un obiect AutentificareUtilizator cu o conexiune mysqli simulată (createMock('mysqli')) pentru majoritatea testelor, ceea ce ajută la izolarea logicii de autentificare la o bază de date reală pentru anumite scenarii. Chiar și atunci când se folosește o conexiune reală la baza de date (new mysqli(...)), scopul este de a testa comportamentul unității logareUtilizator în prezența unei baze de date, nu de a testa baza de date în sine.
 
 Pentru a putea implementa testare unitara pe procesele de logare si de creare cont a trebuit sa instalez PHPUnit cu ajutorul composer 
 
@@ -55,6 +55,9 @@ Cazul de succes (test_logare_Utilizator_Pass_dateValide) acoperă calea în care
 Cazurile de eșec (parolă greșită, nume de utilizator greșit) acoperă căile în care interogarea bazei de date nu găsește o potrivire, chiar dacă inputul este valid
 
 Cazurile de input gol (test_Logare_Utilizator_Fail_Fara_numeUtilizator, test_Logare_Utilizator_Fail_faraParola) acoperă căile în care validările inițiale eșuează.
+
+![image](https://github.com/user-attachments/assets/785cfc17-979d-4fa2-a39a-174602d38ce5)
+
 
 Funcționalități:
 
