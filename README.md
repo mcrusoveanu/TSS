@@ -93,6 +93,67 @@ In momentul in care am folosit gemini pentru cerinta mea rezultatul a fost gener
 
 Codul generat de AI este in documentul login2TesteGenerateDeAI.php
 
+Part 2
+
+Funcție/procedură cu minim 2 parametri
+
+Funcția validareContUtilizator($nume, $parola) are doi parametri:
+
+$nume – numele utilizatorului.
+
+$parola – parola aleasă de utilizator.
+
+Sunt testate diverse combinații de nume și parolă pentru a verifica dacă funcția reacționează corect în fiecare caz.
+
+Instrucțiune repetitivă 
+
+foreach ($utilizatoriExistenti as $utilizator) {
+    if (strtolower($nume) === strtolower($utilizator)) {
+        return "Numele de utilizator este deja folosit.";
+    }
+}
+
+Se parcurge lista de utilizatori existenți pentru a verifica dacă numele introdus este deja folosit, ignorând diferențele de majuscule. Aceasta este o buclă foreach, adică o instrucțiune repetitivă, necesară pentru acoperirea cerinței structurale.
+
+Condiție simplă
+
+Verificare: numele trebuie să aibă cel puțin 3 caractere
+    if (strlen($nume) < 3) {
+        return "Numele trebuie să conțină cel puțin 3 caractere.";
+    }
+
+ Aceasta este o condiție simplă, bazată pe o singură expresie booleană. Verifică dacă numele are sub 3 caractere .
+
+ Condiție compusă
+
+ if (strlen($parola) < 6 || !preg_match('/[0-9]/', $parola))
+
+ Aceasta este o condiție compusă, care verifică două lucruri simultan:
+
+ Lungimea parolei – trebuie să fie de cel puțin 6 caractere.
+
+ Conținutul parolei – trebuie să conțină cel puțin o cifră.
+
+ Testare funcțională și testare structurală
+
+ Testare funcțională:
+  
+ Se verifică dacă funcția răspunde corect pentru inputuri valide și invalide, în conformitate cu cerințele de business (ex. reguli despre parolă, unicitate, etc.).
+ 
+ Exemple: testCreareContSucces(), testParolaContineNume().
+
+ Testare structurală (acoperire de cod):
+
+ Fiecare ramură din funcția validareContUtilizator este testată printr-un test diferit, pentru a verifica
+
+ toate traseele de execuție. Asta acoperă:
+
+ Bucla foreach
+
+ Toate ramurile if
+
+ Condițiile cu valori adevărate și false
+
 Bibliografie :
 Chatgbt 
 
