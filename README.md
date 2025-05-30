@@ -3,13 +3,34 @@ Proiect testare unitara in PHP
 
 ![image](https://github.com/user-attachments/assets/2258f068-a37c-4e2a-a5b3-d0438b380b90)
 Testarea unitară reprezintă o componentă fundamentală a asigurării calității software-ului, având rolul de a valida individual, în izolare, cele mai mici unități de cod sursă. În contextul aplicațiilor web, procesele de login (autentificare) și înregistrare (creare cont) ale utilizatorilor sunt critice și necesită o testare riguroasă pentru a garanta securitatea si buna functionare .
+
 Scopul este de a izola și valida fiecare parte a codului independent.
+
 Întregul fișier AutentificareUtilizatorTest.php este un exemplu de testare unitară.
+
 Fiecare metodă de test (test_Logare_Utilizator_Fail_Fara_numeUtilizator, test_Logare_Utilizator_Fail_faraParola, etc.) testează o anumită unitate de cod (în acest caz, metoda logareUtilizator și implicit metodele private InputValid și sirValid ale clasei AutentificareUtilizator).
+
 Metoda setUp() este folosită pentru a inițializa un obiect AutentificareUtilizator cu o conexiune mysqli simulată (createMock('mysqli')) pentru majoritatea testelor, ceea ce ajută la izolarea logicii de autentificare de o bază de date reală pentru anumite scenarii. Chiar și atunci când se folosește o conexiune reală la baza de date (new mysqli(...)), scopul este de a testa comportamentul unității logareUtilizator în prezența unei baze de date, nu de a testa baza de date în sine.
 
-
 Pentru a putea implementa testare unitara pe procesele de logare si de creare cont a trebuit sa instalez PHPUnit cu ajutorul composer 
+
+Testare Funcțională
+
+Testarea funcțională se concentrează pe verificarea dacă sistemul îndeplinește cerințele specificate și funcționează conform așteptărilor din perspectiva utilizatorului, fără a se interesa de structura internă a codului.
+
+În AutentificareUtilizatorTest.php, următoarele teste reprezintă testare funcțională:
+
+test_Logare_Utilizator_Fail_Fara_numeUtilizator(): Verifică dacă funcția de logare eșuează atunci când numele de utilizator este gol, o cerință funcțională pentru validarea inputului.
+
+test_Logare_Utilizator_Fail_faraParola(): Verifică dacă funcția de logare eșuează atunci când parola este goală.
+
+test_logare_Utilizator_Pass_dateValide(): Verifică dacă logarea are succes cu date de utilizator valide, asigurându-se că funcționalitatea de bază de autentificare este corectă
+
+test_logare_Utilizator_Esueaza_ParolaGresita(): Verifică dacă logarea eșuează atunci când se introduce o parolă incorectă.
+
+test_logare_Utilizator_Esueaza_NumeUtilizatorGresit(): Verifică dacă logarea eșuează atunci când se introduce un nume de utilizator incorect.
+
+Aceste teste validează comportamentul exterior al funcției logareUtilizator bazat pe diferite scenarii de intrare, confirmând că îndeplinește cerințele funcționale.
 
 Funcționalități:
 
