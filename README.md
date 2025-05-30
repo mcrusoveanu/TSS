@@ -165,6 +165,32 @@ Verificare: numele trebuie să aibă cel puțin 3 caractere
  Grafice
  ![image](https://github.com/user-attachments/assets/1d232acf-3d5a-4160-a62c-37ba27ed5edb)
 
+Raport AI pentru partea 2
+
+
+![image](https://github.com/user-attachments/assets/cce4526d-88f7-49ce-b411-ab9ccf9faec7)
+
+![image](https://github.com/user-attachments/assets/d4a63c72-4d52-4132-9a26-e10362be9b4c)
+
+![image](https://github.com/user-attachments/assets/34110628-1669-483b-a3cd-c18a05a86d3e)
+
+![image](https://github.com/user-attachments/assets/0a8c0001-654c-4c09-a87e-d8ae41dd1440)
+
+![image](https://github.com/user-attachments/assets/1fc003e2-90d5-43b2-b07c-478278797460)
+
+![image](https://github.com/user-attachments/assets/bb3c32d7-592c-4f9f-9955-2e2fe7d314f7)
+
+![image](https://github.com/user-attachments/assets/7eb3193b-c3be-4d40-8e55-781480e4be9f)
+
+![image](https://github.com/user-attachments/assets/327ec192-a03c-4de5-97b1-5f5b9129edc9)
+
+![image](https://github.com/user-attachments/assets/e925dd28-58b3-4850-898a-79a8ab9c24e2)
+
+![image](https://github.com/user-attachments/assets/df76d7cd-cdba-4e58-9701-45ae82e64db2)
+
+![image](https://github.com/user-attachments/assets/c5c3066b-0188-41f6-8c04-d651e8bbdbc9)
+
+
 
 
 
@@ -179,6 +205,16 @@ https://www.youtube.com/watch?v=a5ZKCFINUkU&t=153s
 https://www.youtube.com/watch?v=c0cmRy3lhDQ
 
 https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf
+
+
+
+
+
+
+
+
+
+
 
 
 
