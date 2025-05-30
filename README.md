@@ -42,6 +42,7 @@ In momentul in care am folosit gemini pentru cerinta mea rezultatul a fost gener
 ![image](https://github.com/user-attachments/assets/028c7150-c15f-4579-addf-22fdc43cbb3f)
 ![image](https://github.com/user-attachments/assets/4121d8f0-b3ca-4ea3-9468-b854758d5cb2)
 ![image](https://github.com/user-attachments/assets/22c9a2c9-e03b-42b9-9b2c-0ee227d5a90c)
+
 Codul generat de AI este in documentul login2TesteGenerateDeAI.php
 
 
