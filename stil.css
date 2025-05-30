@@ -1,0 +1,82 @@
+A:active, A:link, A:visited {
+ color: #990000;
+ text-decoration: none;
+ font-size: 10pt;
+}
+A:hover {
+ background-color: #990000;
+ color: #FDFAF2;
+ text-decoration: underline overline;
+ font-size: 10pt;
+}
+
+A.linkmeniu, A.linkmeniu:link, A.linkmeniu:visited {
+ display: block;
+ width: 100%;
+ text-align: center;
+ text-decoration: none;
+ color: #990000;
+ font-family: Arial;
+ font-size: 10pt;
+ font-weight: bold;
+}
+
+A.linkmeniu:hover {
+ background-color: #FFD2A6;
+ color: #990000;
+}
+
+
+BODY {
+ background-image: url("img/bg.gif");
+ background-color: #FFD2A6;
+ background-attachment: fixed;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 10pt;
+ color: #000000;
+scrollbar-face-color: #990000;
+scrollbar-arrow-color: #FFFFCC;
+scrollbar-track-color: #FF6600;
+scrollbar-3dlight-color: #FFFFCC;
+scrollbar-shadow-color: #FFFFCC;
+scrollbar-highlight-color: #FFFFCC;
+}
+
+P, TD {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 10pt;
+ color: #000000;
+}
+
+H1, H2, H3, H4, H5, H6 {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14pt;
+ color: #000000;
+}
+
+HR {
+ color: #FFCC99;
+}
+
+TABLE {
+ border-color: #990000;
+}
+
+.txt {
+ font-family: Arial, Helvetica, sans-serif;
+ /* font-size: 10px; */
+ color: #990000;
+ background: #FDF9F6;
+ border: 1px solid #990000;
+ padding-left: 3px;
+}
+
+.buton {
+ font-family: Arial, Helvetica, sans-serif;
+ /* font-size: 10px; */
+ font-weight: bold;
+ color: #990000;
+ background: #FDF9F6;
+ border: 1px solid #990000;
+ cursor: hand;
+}
