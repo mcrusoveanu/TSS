@@ -21,4 +21,6 @@ b) daca un utilizator introduce doar numele de utilizator sau doar parola rezult
 Pentru a rula testele se foloseste 
 cd C:\xampp3\htdocs\projectTest
 vendor\bin\phpunit tests/ AuthenticatorTest.php
+![image](https://github.com/user-attachments/assets/9b8021c1-9dcb-42f9-a5fc-a8f43887074e)
+Diagrama Flux Logare
 
