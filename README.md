@@ -23,4 +23,9 @@ cd C:\xampp3\htdocs\projectTest
 vendor\bin\phpunit tests/ AuthenticatorTest.php
 ![image](https://github.com/user-attachments/assets/9b8021c1-9dcb-42f9-a5fc-a8f43887074e)
 Diagrama Flux Logare
+![image](https://github.com/user-attachments/assets/c66efadc-2fa1-471b-92da-a383f2a965b5)
+![image](https://github.com/user-attachments/assets/f773fdbf-ffea-4ffb-8cef-0fd1ad89a953)
+
+
+
 
