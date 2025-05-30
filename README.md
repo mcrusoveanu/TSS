@@ -32,6 +32,30 @@ test_logare_Utilizator_Esueaza_NumeUtilizatorGresit(): Verifică dacă logarea e
 
 Aceste teste validează comportamentul exterior al funcției logareUtilizator bazat pe diferite scenarii de intrare, confirmând că îndeplinește cerințele funcționale.
 
+Testare Structurală (White-Box Testing)
+
+Testarea structurală examinează structura internă a codului, inclusiv căile de execuție, condițiile și buclele, pentru a asigura că toate părțile relevante ale codului sunt testate.
+
+În AutentificareUtilizator.php, există elemente care demonstrează nevoia de testare structurală, iar în AutentificareUtilizatorTest.php, anumite teste, deși unitare și funcționale, contribuie la acoperirea structurală:
+
+Validarea Inputului și a String-ului SQL:
+
+Metoda logareUtilizator include verificări explicite pentru inputuri nule sau goale (!isset($numeUtilizator) || !isset($parolaUtilizator)) și validarea prin InputValid și sirValid.
+
+Testele test_Logare_Utilizator_Fail_Fara_numeUtilizator() și test_Logare_Utilizator_Fail_faraParola() acoperă direct căile de execuție declanșate de eșecul acestor validări. Acestea intră în sfera testării structurale deoarece se bazează pe cunoașterea și exercitarea condițiilor interne ale codului.
+
+Acoperirea Căilor de Execuție:
+
+Funcția logareUtilizator are multiple căi de execuție determinate de validarea inputului, de rezultatul interogării bazei de date și de verificarea sirValid.
+
+Testele furnizate încearcă să acopere aceste căi:
+
+Cazul de succes (test_logare_Utilizator_Pass_dateValide) acoperă calea în care toate validările trec și interogarea returnează un singur rând.
+
+Cazurile de eșec (parolă greșită, nume de utilizator greșit) acoperă căile în care interogarea bazei de date nu găsește o potrivire, chiar dacă inputul este valid
+
+Cazurile de input gol (test_Logare_Utilizator_Fail_Fara_numeUtilizator, test_Logare_Utilizator_Fail_faraParola) acoperă căile în care validările inițiale eșuează.
+
 Funcționalități:
 
 1 Pentru a se putea conecta la site un utilizator trebuie sa completeze atat parola cat si numele de utilizator in mod corect altfel se afiseaza un mesaj de eroare.
