@@ -167,7 +167,9 @@ Verificare: numele trebuie să aibă cel puțin 3 caractere
 
 
 
+
 Bibliografie :
+
 Chatgbt 
 
 Gemini
