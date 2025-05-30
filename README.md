@@ -154,6 +154,19 @@ Verificare: numele trebuie să aibă cel puțin 3 caractere
 
  Condițiile cu valori adevărate și false
 
+ Rulare teste:
+ 
+ ![image](https://github.com/user-attachments/assets/961d92fb-6c50-41d3-b39b-d751ae7b1495)
+
+ Comanda
+ 
+ C:\xampp3\htdocs\projectTest>vendor\bin\phpunit tests/ creareContUserTest.php
+
+ Grafice
+ ![image](https://github.com/user-attachments/assets/1d232acf-3d5a-4160-a62c-37ba27ed5edb)
+
+
+
 Bibliografie :
 Chatgbt 
 
